@@ -16,8 +16,13 @@ $(window).on('scroll',function(){
   }
 });
 
+// adding fadeInUp animation to child of div with class .way-col
 
 
+
+
+  
+  
 
   var typed = new Typed(".element", {
   strings: ["Erick Rosa", "a Developer", "and", " a Historian"],
