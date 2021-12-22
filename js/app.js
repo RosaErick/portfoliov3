@@ -1,56 +1,70 @@
+$(document).ready(function () {
+  $(window).on("load", function () {
+    $(".preloader").addClass("complete");
+  });
 
-$(document).ready(function(){
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+    console.log(scroll);
 
+    if (scroll >= 0) {
+      $(".sticky").removeClass("takeout");
+    }
+    if (scroll >= 850) {
+      $(".sticky").addClass("takeout animated");
+    }
+    if (scroll >= 2900) {
+      $(".sticky").removeClass("takeout animated");
+      $(".sticky").addClass("stickyadd");
+    }
+  });
 
-$(window).on('load',function(){
-  $('.preloader').addClass('complete')
-});
+  // adding fadeInUp animation to child of div with class .way
 
-$(window).on('scroll',function(){
-  var scroll = $(window).scrollTop();
-  console.log(scroll);
-  if(scroll >=50){
-    $(".sticky").addClass("stickyadd");
-  }else{
-    $(".sticky").removeClass("stickyadd");
-  }
-});
+  var $child = $(".way-fade-up").children();
+  $child.each(function () {
+    var self = $(this);
+    $(this).waypoint(
+      function () {
+        self.addClass("animated fadeInUp");
+      },
+      { offset: "90%" }
+    );
+  });
 
-// adding fadeInUp animation to child of div with class .way-col
+  var $child = $(".way-fade-left").children();
+  $child.each(function () {
+    var self = $(this);
+    $(this).waypoint(
+      function () {
+        self.addClass("animated fadeInLeft");
+      },
+      { offset: "90%" }
+    );
+  });
 
-
-
-
-  
-  
+  var $child = $(".way-fade-right").children();
+  $child.each(function () {
+    var self = $(this);
+    $(this).waypoint(
+      function () {
+        self.addClass("animated fadeInRight");
+      },
+      { offset: "90%" }
+    );
+  });
 
   var typed = new Typed(".element", {
-  strings: ["Erick Rosa", "a Developer", "and", " a Historian"],
-  smartBackspace: true,
-   typeSpeed: 100,
-   backSpeed: 100,
-   loop: true,
-  loopCount: Infinity,
-  startDelay: 1000
-  });
-  
-  var typed2 = new Typed(".elementTwo", {
-    
-  strings: ["I'm  ", ""],
-  smartBackspace: true,
-   typeSpeed: 110,
-    backSpeed: 200,
-   loop: true,
-  loopCount: Infinity,
+    strings: ["Erick Rosa", "a Web Developer", "I build things for the web"],
+    smartBackspace: true,
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true,
+    loopCount: Infinity,
     startDelay: 1000,
-    showCursor: false,
-  
-  })
+  });
 
-
-$('a').smoothScroll({
-
-  speed:2000,
-});
-
+  $("a").smoothScroll({
+    speed: 2000,
+  });
 });

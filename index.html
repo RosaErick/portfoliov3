@@ -1,552 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-      crossorigin="anonymous"
-    />
 
-    <link rel="icon" href="images/icons8-sloth-64.png" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Nunito:400,700"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="lib/animate.css" />
-    <title>Erick Rosa | Portfolio</title>
-  </head>
-  <body>
-    <div class="preloader">
-      <div class="circle"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+  <link rel="icon" href="images/icons8-sloth-64.png" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Nunito:400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="lib/animate.css" />
+  <title>Erick Rosa | Portfolio</title>
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="circle"></div>
+  </div>
+
+  <nav class="navbar navbar-expand-md sticky fixed-top r-nav">
+    <div class="container">
+      <img class="nav-brand animated fadeInLeft" style="width: 30px; margin: 0 5px" src="images/greeneslothicon.png"
+        alt="" />
+      <a class="navbar-brand animated fadeInDown" href="#">Erick.</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars hamburger"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item animated fadeInLeft">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item animated fadeInRight">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item animated fadeInLeft">
+            <a class="nav-link" href="#services">Projects</a>
+          </li>
+          <li class="nav-item animated fadeInRight">
+            <a class="nav-link" href="https://erickrosa.gatsbyjs.io/" target="_blank">Blog</a>
+          </li>
+
+          <li class="nav-item animated fadeInRight">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <nav class="navbar navbar-expand-md sticky fixed-top r-nav">
-      <div class="container">
-        <img
-          class="nav-brand animated fadeInLeft"
-          style="width: 30px; margin: 0 5px"
-          src="images/icons8-sloth-64.png"
-          alt=""
-        />
-        <a class="navbar-brand animated fadeInDown" href="#">Erick.</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span><i class="fas fa-bars hamburger"></i></span>
-        </button>
+  <header id="home">
+    <div class="container header-content">
 
-        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item animated fadeInLeft">
-              <a class="nav-link" href="#home"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item animated fadeInRight">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item animated fadeInLeft">
-              <a class="nav-link" href="#services">Projects</a>
-            </li>
-            <li class="nav-item animated fadeInRight">
-              <a
-                class="nav-link"
-                href="https://erickrosa.gatsbyjs.io/"
-                target="_blank"
-                >Blog</a
-              >
-            </li>
 
-            <li class="nav-item animated fadeInRight">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <header id="home">
-      <div class="container header-content">
-        <div class="row">
-          <div class="col-lg-6 col-xl-5">
-            <div class="text-container animated fadeInLeft">
-              <h1 class="h1 font-weight-bold mt-5 pt-5">Welcome</h1>
-              <h1>
-                <span class="elementTwo"></span><br /><span
-                  class="element"
-                  style="color: rgba(66, 48, 100, 0.604); font-weight: bold"
-                ></span>
-              </h1>
-              <p class="p-large">
-                I'm an aspiring web developer from Rio de Janeiro, Brazil. I'm
-                curruntely learning Javascript.
-              </p>
-              <!--<a href="#" type="button" class="h-btn">Download CV</a>-->
-            </div>
-            <!-- end of text-container -->
-          </div>
-          <!-- end of col -->
-          <div class="col-lg-6 col-xl-7">
-            <div class="image-container">
-              <img
-                class="img-fluid img-header animated fadeInDown"
-                src="images/undraw_programming_re_kg9v.svg"
-                alt="alternative"
-              />
-            </div>
-            <!-- end of image-container -->
-          </div>
-          <!-- end of col -->
-        </div>
-
-        <div class="area">
-          <ul class="circles animated fadeInUp">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-      </div>
-    </header>
-
-    <!-- About Section -->
-    <section class="about r-p" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 way-fade-up">
-            <img
-              src="images/meportfolio.jpeg"
-              class="img-fluid img-thumbnail profile-photo"
-              alt="Profile Picture"
-            />
-          </div>
-          <div class="col-lg-6 way-fade-up mt-5 mt-lg-0">
-            <h2 class="">About Me</h2>
-            <h4 class="">
-              Hi! <span style="color: #081730" ;>I'm Erick</span>
-            </h4>
-
-            <p>
-              I'm 26, I graduated from Universidade Federal Rural do Rio de
-              Janeiro with a Bachelor of History, but have gained a massive
-              interest in web development and technologies. I'm passionate about
-              building things with code.
+      <div class="row">
+        <div class="col-lg-6 col-xl-5">
+          <div class="text-container animated fadeInLeft">
+            <h1 class="h1 font-weight-bold mt-5 pt-5">Welcome</h1>
+            <h1>
+              <span>I'm</span><br /><span class="element" style="color:var(--greene); font-weight: bold"></span>
+            </h1>
+            <p class="p-large">
+              I'm a junior web developer, focused on front-end development, from Rio de Janeiro, Brazil. I'm
+              curruntely learning Javascript and React.
             </p>
-            <p>
-              I've always been curious about coding but after starting the
-              Responsive Web Design curriculum from freeCodeCamp I was hooked.
-            </p>
-            <p>
-              Since being introduced to coding I have started reading articles,
-              listening to podcasts, taking online courses and creating a
-              portfolio of projects. I sincerely think that I have discovered my
-              passion in life.
-            </p>
+            <!--<a href="#" type="button" class="h-btn">Download CV</a>-->
+          </div>
+          <!-- end of text-container -->
+        </div>
+        <!-- end of col -->
+        <div class="col-lg-6 col-xl-7">
+          <div class="image-container">
+            <img class="img-fluid img-header animated fadeInDown" src="images/pixeltrue-web-development.svg"
+              alt="alternative" />
+          </div>
+          <!-- end of image-container -->
+        </div>
+        <!-- end of col -->
+      </div>
+      <!-- Particles-JS Background -->
+      <div id="particles-js" class="animated fadeInUp"></div>
+    </div>
+  </header>
 
-            <div class="r-icon">
-              <ul class="list-inline">
-                <li class="list-inline-item animated slideInUp">
-                  <a href="https://www.instagram.com/erickrozza/"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item animated slideInUp">
-                  <a href="https://www.linkedin.com/in/erick-rosa-1465a07a/"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item animated slideInUp">
-                  <a href="https://github.com/RosaErick"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item animated slideInUp">
-                  <a
-                    href="mailto:erickpmotta@gmail.com"
-                    alt="erickpmotta@gmail.com"
-                    target="_blank"
-                    ><i class="fas fa-envelope"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
+  <!-- About Section -->
+  <section class="about r-p" id="about">
+    <div class="container about-sec way-fade-left ">
+      <div class="row">
+
+        <div class="col-lg-9 way-fade-right">
+          <h2 class="">About Me</h2>
+          <h4 class="">
+            Hi! <span style="color:var(--greene);">I'm Erick</span>
+          </h4>
+
+          <p>
+            I'm 26, I graduated from Universidade Federal Rural do Rio de
+            Janeiro with a Bachelor of History, but have gained a massive
+            interest in web development and technologies. I'm passionate about
+            building things with code.
+          </p>
+          <p>
+            I've always been curious about coding but after starting the
+            Responsive Web Design curriculum from freeCodeCamp I was hooked.
+          </p>
+          <p>
+            Since being introduced to coding I have started reading articles,
+            listening to podcasts, taking online courses and creating a
+            portfolio of projects. I sincerely think that I have discovered my
+            passion in life.
+          </p>
+
+          <div class="r-icon">
+            <ul class="list-inline">
+              <li class="list-inline-item animated slideInUp">
+                <a href="https://www.instagram.com/erickrozza/"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item animated slideInUp">
+                <a href="https://www.linkedin.com/in/erick-rosa-1465a07a/"><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li class="list-inline-item animated slideInUp">
+                <a href="https://github.com/RosaErick"><i class="fab fa-github"></i></a>
+              </li>
+              <li class="list-inline-item animated slideInUp">
+                <a href="mailto:erickpmotta@gmail.com" alt="erickpmotta@gmail.com" target="_blank"><i
+                    class="fas fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 way-fade-left img-about ">
+
+          <img src="images/20210331_155651.jpg" class="img-fluid profile-photo" alt="Profile Picture" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience way-fade-left" id="experience">
+    <div class="container">
+      <div class="container text-center way-fade-left">
+        <h3>My Skills</h3>
+      </div>
+
+      <div class="row justify-content-center align-items-lg-stretch px-5">
+        <div class="column-1">
+          <div class="p-1">
+            <a href="" target="_blank">
+              <img class="icon" src="images/html.185baee7.svg" alt="Icon HTML" /></a>
+          </div>
+        </div>
+        <div class="column-1">
+          <div class="p-1">
+            <a href="" target="_blank"><img class="icon" src="images/css.212d777a.svg" alt="" /></a>
+          </div>
+        </div>
+        <div class="column-1">
+          <div class="p-1">
+            <a href="" target="_blank"><img class="icon" src="images/js.c4c89593.svg" alt="" /></a>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Experience -->
-    <section class="experience mb-5 animated fadeInLeft" id="experience">
-      <div class="container">
-        <div class="container text-center">
-          <h3>My Skills</h3>
-        </div>
-
-        <div class="row justify-content-center align-items-lg-stretch m-5">
-          <div class="column-1">
-            <div class="p-1">
-              <a href="" target="_blank">
-                <img
-                  class="icon"
-                  src="images/html.185baee7.svg"
-                  alt="Icon HTML"
-              /></a>
-            </div>
-          </div>
-          <div class="column-1">
-            <div class="p-1">
-              <a href="" target="_blank"
-                ><img class="icon" src="images/css.212d777a.svg" alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="column-1">
-            <div class="p-1">
-              <a href="" target="_blank"
-                ><img class="icon" src="images/js.c4c89593.svg" alt=""
-              /></a>
-            </div>
+      <div class="row justify-content-center align-items-lg-stretch px-5">
+        <div class="column-1">
+          <div class="p-2">
+            <img class="icon" src="images/git.4e11bfbc.svg" alt="" />
           </div>
         </div>
 
-        <div class="row justify-content-center align-items-lg-stretch m-5">
-          <div class="column-1">
-            <div class="p-2">
-              <img class="icon" src="images/git.4e11bfbc.svg" alt="" />
-            </div>
+        <div class="column-1">
+          <div class="p-2">
+            <img class="icon" src="images/termin.97d2ef72.svg" alt="" />
           </div>
+        </div>
+        <div class="column-1">
+          <div class="p-2">
+            <img class="icon" src="images/bootstrap.09b773cc.svg" alt="" />
+          </div>
+        </div>
+        <div class="column-1">
+          <div class="p-2">
+            <a target="_blank"><img class="icon" src="images/github-icon-1.svg" alt="" /></a>
+          </div>
+        </div>
+        <div class="column-1">
+          <div class="p-2">
+            <img class="icon" src="images/jquery_logo_icon_167804.svg" alt="" />
+          </div>
+        </div>
 
-          <div class="column-1">
-            <div class="p-2">
-              <img class="icon" src="images/termin.97d2ef72.svg" alt="" />
-            </div>
-          </div>
-          <div class="column-1">
-            <div class="p-2">
-              <img class="icon" src="images/bootstrap.09b773cc.svg" alt="" />
-            </div>
-          </div>
-          <div class="column-1">
-            <div class="p-2">
-              <a target="_blank"
-                ><img class="icon" src="images/github-icon-1.svg" alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="column-1">
-            <div class="p-2">
-              <img
-                class="icon"
-                src="images/jquery_logo_icon_167804.svg"
-                alt=""
-              />
-            </div>
-          </div>
-
-          <div class="column-1">
-            <div class="p-2">
-              <a href="" target="_blank"
-                ><img class="icon" src="images/npm-2.svg" alt=""
-              /></a>
-            </div>
+        <div class="column-1">
+          <div class="p-2">
+            <a href="" target="_blank"><img class="icon" src="images/npm-2.svg" alt="" /></a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Services -->
-    <section class="services bg-sec r-p" id="services">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col mb-5 way-fade-up">
-            <div class="col">
-              <h2>Projects</h2>
-              <p>
-                Some projects i've built so far while learning to
-                <code style="color: #a39729">code</code>. See more
-                <a
-                  style="color: #081730"
-                  href="https://rosaerick.github.io/my-projects/"
-                  target="_blank"
-                  alt="projects"
-                  >here</a
-                >.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- cards -->
-        <div class="row text-center way-fade-up">
-          <div class="col-lg-4 way-fade-up">
-            <div class="card">
-              <div class="card-header">
-                <img
-                  class="card-img-top"
-                  src="images/mlmpic.png"
-                  alt="Card image cap"
-                />
-              </div>
-
-              <div class="card-body">
-                <h5 class="card-title">Academic Study Group Blog</h5>
-                <div class="service-border"></div>
-
-                <p class="card-text">
-                  A responsive and customizable blog webpage that follows the
-                  JAMstack architecture. Built for my first client using Gatbsy,
-                  React and Netlify CDN.
-                </p>
-                <a href="https://github.com/RosaErick/ErickRosa-Blog"    target="_blank" class="p-btn">Code</a>
-                <a href="https://grupodeestudosmlm.netlify.app/"    target="_blank" class="p-btn">Live Preview</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 way-fade-up">
-            <div class="card">
-              <div class="card-header">
-                <img
-                  class="card-img-top"
-                  src="images/philoquote (1).png"
-                  alt="Card image cap"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Philosophy Quote Genarator</h5>
-                <div class="service-border"></div>
-                <p class="card-text">
-                  this is my first React project. A random philosophy quote
-                  generator. Built to practice React and API consumption.
-                </p>
-                <a href="https://github.com/RosaErick/random-philosophy-quote-generator"    target="_blank" class="p-btn">Code</a>
-                <a href="https://philosophyquotegenerator.netlify.app/"    target="_blank" class="p-btn">Live Preview</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 way-fade-up">
-            <div class="card">
-              <div class="card-header">
-                <img
-                  class="card-img-top"
-                  src="images/screenshotblog2.png"
-                  alt="Card image cap"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Personal Blog</h5>
-                <div class="service-border"></div>
-                <p class="card-text">
-                  A responsive personal blog webpage. Built with the SSG
-                  framework Gatbsy. This was my first project using Gatsby.
-                </p>
-                <a href="https://github.com/RosaErick/ErickRosa-Blog"    target="_blank"  class="p-btn">Code</a>
-                <a href="https://erickrosa.gatsbyjs.io/"     target="_blank" class="p-btn">Live Preview</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row text-center way-fade-up mt-4">
-          <div class="col-lg-4 way-fade-up">
-            <div class="card">
-              <div class="card-header">
-                <img
-                  class="card-img-top"
-                  src="images/cestaorg.png"
-                  alt="Card image cap"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Survey Form</h5>
-                <div class="service-border"></div>
-                <p class="card-text">
-                  A fully functional and accessible product survey form. Built
-                  using HTML and CSS.
-                </p>
-                <a href="https://github.com/RosaErick/Survey-Form-FCC"    target="_blank" class="p-btn">Code</a>
-                <a href="https://rosaerick.github.io/Survey-Form-FCC/"    target="_blank" class="p-btn">Live Preview</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 way-fade-up">
-            <div class="card">
-              <div class="card-header">
-                <img
-                  class="card-img-top"
-                  src="images/pizzapage (1).png"
-                  alt="Card image cap"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Old Pizza Landing Page</h5>
-                <div class="service-border"></div>
-                <p class="card-text">
-                  A fake restaurant that serves only day old pizza. Fun project
-                  i've built to practice bootstrap and JS.
-                </p>
-                <a href="https://github.com/RosaErick/landing-page-pizza"    target="_blank" class="p-btn">Code</a>
-                <a href="https://rosaerick.github.io/landing-page-pizza/index.html"    target="_blank" class="p-btn">Live Preview</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 way-fade-right">
-            <div class="card">
-              <div class="card-header">
-                <img
-                  class="card-img-top"
-                  src="images/flix (1).png"
-                  alt="Card image cap"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">HistoryFlix</h5>
-                <div class="service-border"></div>
-                <p class="card-text">
-                  A responsive Netflix clone page with custom incrementation. A
-                  netflix of only History related films. Built using HTML, CSS
-                  and JavaScript.
-                </p>
-                <a href="https://github.com/RosaErick/Digital-Innovation-One/tree/master/Projetos/Projeto%20Flix%20Mock%20Up"    target="_blank" class="p-btn">Code</a>
-                <a href="https://rosaerick.github.io/Digital-Innovation-One/Projetos/Projeto%20Flix%20Mock%20Up/"    target="_blank" class="p-btn">Live Preview</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Hire Me -->
-    <section class="hire r-p" id="hire">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col way-fade-left">
-            <h3 class="mb-4">I am Available for Freelance</h3>
-            <a href="mailto:erickpmotta@gmail.com" class="btn r-btn">Hire Me</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="contact r-p bg-sec" id="contact">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col way-fade-left">
-            <h2>Contact Me</h2>
-            <p>Feel free to contact me.</p>
-          </div>
-        </div>
-        <div class="row mt-5 justify-content-center">
-          <div class="col-1-md-4">
-            <div class="r-icon"><i class="far fa-envelope"></i></div>
-            <div class="text-center">
-              <h5>Email</h5>
-              <p class="text-muted">erickpmotta@gmail.com</p>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5">
+  <!-- Services -->
+  <section class="services bg-sec r-p" id="services">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col mb-5 way-fade-right">
           <div class="col">
-            <form>
-              <div class="form-row way-fade-left">
-                <div class="form-group col-md-6">
-                  <input type="text" class="form-control" placeholder="Name" />
-                </div>
-                <div class="form-group col-md-6">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Email"
-                  />
-                </div>
-              </div>
-              <div class="form-group way-fade-left">
-                <input type="text" class="form-control" placeholder="Subject" />
-              </div>
-              <div class="form-group way-fade-left">
-                <textarea
-                  class="form-control"
-                  rows="7"
-                  placeholder="Your Message"
-                  style="resize: none"
-                ></textarea>
-              </div>
-
-              <button type="submit" class="btn r-btn">Submit</button>
-            </form>
+            <h2>Projects</h2>
+            <p>
+              Some projects i've built so far while learning to
+              <code style="color: var(--pinky)">code</code>. See more
+              <a style="color: var(--lightest-slate)" href="https://rosaerick.github.io/my-projects/" target="_blank"
+                alt="projects">here</a>.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- footer -->
-    <footer>
-      <div
-        class="container h-100 d-flex align-items-center justify-content-center"
-      >
-        <div class="row">
-          <div class="col">
-            <div class="r-icon text-center mt-3">
-              <ul>
-                <li class="list-inline-item animated slideInUp">
-                  <a href="https://www.instagram.com/erickrozza/"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item animated slideInUp">
-                  <a href="https://www.linkedin.com/in/erick-rosa-1465a07a/"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item animated slideInUp">
-                  <a href="https://github.com/RosaErick"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                </li>
-              </ul>
+      <!-- cards -->
+      <div class="row text-center way-fade-left">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <img class="card-img-top" src="images/mlmpic.png" alt="Card image cap" />
             </div>
-            <p class="text-center" style="font-size: 14px">Erick Rosa | 2021</p>
+
+            <div class="card-body">
+              <h5 class="card-title">Academic Study Group Blog</h5>
+              <div class="service-border"></div>
+
+              <p class="card-text">
+                A responsive and customizable blog webpage that follows the
+                JAMstack architecture. Built for my first client using Gatbsy,
+                React and Netlify CDN.
+              </p>
+              <a href="https://github.com/RosaErick/ErickRosa-Blog" target="_blank" class="p-btn">Code</a>
+              <a href="https://grupodeestudosmlm.netlify.app/" target="_blank" class="p-btn">Live Preview</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 way-fade-right">
+          <div class="card">
+            <div class="card-header">
+              <img class="card-img-top" src="images/philoquote (1).png" alt="Card image cap" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Philosophy Quote Genarator</h5>
+              <div class="service-border"></div>
+              <p class="card-text">
+                this is my first React project. A random philosophy quote
+                generator. Built to practice React and API consumption.
+              </p>
+              <a href="https://github.com/RosaErick/random-philosophy-quote-generator" target="_blank"
+                class="p-btn">Code</a>
+              <a href="https://philosophyquotegenerator.netlify.app/" target="_blank" class="p-btn">Live Preview</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 way-fade-left">
+          <div class="card">
+            <div class="card-header">
+              <img class="card-img-top" src="images/screenshotblog2.png" alt="Card image cap" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Personal Blog</h5>
+              <div class="service-border"></div>
+              <p class="card-text">
+                A responsive personal blog webpage. Built with the SSG
+                framework Gatbsy. This was my first project using Gatsby.
+              </p>
+              <a href="https://github.com/RosaErick/ErickRosa-Blog" target="_blank" class="p-btn">Code</a>
+              <a href="https://erickrosa.gatsbyjs.io/" target="_blank" class="p-btn">Live Preview</a>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+      <div class="row text-center way-fade-right mt-4">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <img class="card-img-top" src="images/cestaorg.png" alt="Card image cap" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Survey Form</h5>
+              <div class="service-border"></div>
+              <p class="card-text">
+                A fully functional and accessible product survey form. Built
+                using HTML and CSS.
+              </p>
+              <a href="https://github.com/RosaErick/Survey-Form-FCC" target="_blank" class="p-btn">Code</a>
+              <a href="https://rosaerick.github.io/Survey-Form-FCC/" target="_blank" class="p-btn">Live Preview</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 way-fade-left">
+          <div class="card">
+            <div class="card-header">
+              <img class="card-img-top" src="images/pizzapage (1).png" alt="Card image cap" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Old Pizza Landing Page</h5>
+              <div class="service-border"></div>
+              <p class="card-text">
+                A fake restaurant that serves only day old pizza. Fun project
+                i've built to practice bootstrap and JS.
+              </p>
+              <a href="https://github.com/RosaErick/landing-page-pizza" target="_blank" class="p-btn">Code</a>
+              <a href="https://rosaerick.github.io/landing-page-pizza/index.html" target="_blank" class="p-btn">Live
+                Preview</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 way-fade-right">
+          <div class="card">
+            <div class="card-header">
+              <img class="card-img-top" src="images/flix (1).png" alt="Card image cap" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">HistoryFlix</h5>
+              <div class="service-border"></div>
+              <p class="card-text">
+                A responsive Netflix clone page with custom incrementation. A
+                netflix of only History related films. Built using HTML, CSS
+                and JavaScript.
+              </p>
+              <a href="https://github.com/RosaErick/Digital-Innovation-One/tree/master/Projetos/Projeto%20Flix%20Mock%20Up"
+                target="_blank" class="p-btn">Code</a>
+              <a href="https://rosaerick.github.io/Digital-Innovation-One/Projetos/Projeto%20Flix%20Mock%20Up/"
+                target="_blank" class="p-btn">Live Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"
-    ></script>
-    <script src="lib/jquery.smooth-scroll.js"></script>
-    <script src="lib/imagesloaded.pkgd.min.js"></script>
-    <script src="lib/typed.js"></script>
-    <script src="js/app.js"></script>
+  <!-- Hire Me -->
+  <section class="hire r-p" id="hire">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col way-fade-left">
+          <h3 class="mb-4">I am Available for Freelance</h3>
+          <a href="mailto:erickpmotta@gmail.com" class="p-btn">Hire Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Contact -->
+  <section class="contact r-p bg-sec" id="contact">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col way-fade-left">
+          <h2>Contact Me</h2>
+          <p>Feel free to contact me.</p>
+        </div>
+      </div>
+      <div class="row mt-5 justify-content-center">
+        <div class="col-1-md-4">
+          <div class="r-icon"><i class="far fa-envelope"></i></div>
+          <div class="text-center">
+            <h5>Email</h5>
+            <p class="text-muted">erickpmotta@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <form>
+            <div class="form-row way-fade-left">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+            </div>
+            <div class="form-group way-fade-left">
+              <input type="text" class="form-control" placeholder="Subject" />
+            </div>
+            <div class="form-group way-fade-left">
+              <textarea class="form-control" rows="7" placeholder="Your Message" style="resize: none"></textarea>
+            </div>
+
+            <button type="submit" class="p-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="container h-100 d-flex align-items-center justify-content-center">
+      <div class="row">
+        <div class="col">
+          <div class="r-icon text-center mt-3">
+            <ul>
+              <li class="list-inline-item animated slideInUp">
+                <a href="https://www.instagram.com/erickrozza/"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item animated slideInUp">
+                <a href="https://www.linkedin.com/in/erick-rosa-1465a07a/"><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li class="list-inline-item animated slideInUp">
+                <a href="https://github.com/RosaErick"><i class="fab fa-github"></i></a>
+              </li>
+            </ul>
+          </div>
+          <p class="text-center" style="font-size: 14px">Erick Rosa | 2021</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="lib/jquery.smooth-scroll.js"></script>
+  <script src="lib/typed.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+  <script src="lib/jquery.waypoints.min.js"></script>
+  <script src="lib/particles.js"></script>
+  <script src="lib/app-particle.js"></script>
+</body>
+
 </html>
