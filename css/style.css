@@ -155,7 +155,7 @@ nav.stickyadd .navbar-brand {
 }
 
 .navbar .hamburger {
-color: #fff;
+color: #fff!important;
 }
 
 nav *,
